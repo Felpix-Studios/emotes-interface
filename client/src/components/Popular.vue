@@ -33,7 +33,7 @@ export default {
     },
     mounted(){
         this.$axios
-            .get('key here')
+            .get('Insert key')
             .then(response=>(this.popularEmotes=response["data"]))
         console.log(this.popularEmotes)
     },
