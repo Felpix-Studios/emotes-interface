@@ -33,7 +33,7 @@ export default {
     },
     mounted(){
         this.$axios
-            .get('https://emotes.ml/api/emotes?api_key=bQ_3ukoR1MaK1gxQT6OPQqgOgmxx4_mckSkWtlU_T2QLlFcHsEI04jN3sS2BKyhS1-lSdzi6_GRa-bn9SAbe_GJhY32Qsvt6RBE3Ug-yOYO-qsi2ICprDFFVc8XXflZ5G8ixH59kWmrTzFH3eNyq3MTSdOP-bZ333PrvSbNxQVk')
+            .get('key here')
             .then(response=>(this.popularEmotes=response["data"]))
         console.log(this.popularEmotes)
     },
