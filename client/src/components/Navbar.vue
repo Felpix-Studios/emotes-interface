@@ -2,8 +2,8 @@
     <div class="nav">
         <h1>emotes.ml</h1>
         <div class="navLinks">
-            <a href="/">Browse</a>
-            <a href="/">Create</a>
+            <router-link to="/"><a href="#">Browse</a></router-link>
+            <router-link to="/create"><a href="#">Create</a></router-link>
         </div>
     </div>
 </template>
@@ -26,12 +26,14 @@ export default {
     justify-content: space-between;
     h1{
         font-size: 1.5rem;
+        color: #272643;
     }
     .navLinks{
         a{
-            color:#121212;
+            color:#2C698D;
             &:hover{
                 text-decoration: underline;
+                color:#272643;
             }
         }
         a:first-child{

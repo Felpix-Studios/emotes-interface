@@ -32,7 +32,7 @@ export default {
 
 <style lang="scss" scoped>
 .EmoteBox{
-    border: 2px solid #121212;
+    border: 2px solid #272643;
     border-radius: 0.5rem;
     padding:1rem 2rem;
     h3{
@@ -41,11 +41,11 @@ export default {
         margin: 0;
         a{
             position:relative;
-        color:#363636;
+        color:#2C698D;
         margin: 0;
         }
         & a:hover{
-            color: #121212;
+            color: #272643;
             text-decoration: underline;
         }
     }
@@ -69,7 +69,7 @@ export default {
             content: attr(data-tooltip);
             position: absolute;
             color: #fff;
-            background: #282828;
+            background: #272643;
             padding: 8px 12px;
             width: -webkit-max-content;
             width: -moz-max-content;

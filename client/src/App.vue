@@ -1,18 +1,16 @@
 <template>
   <div id="app">    
     <Navbar/>
-    <Popular/>
+    <router-view/>
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
-import Popular from './components/Popular.vue'
 export default {
   name: 'App',
   components: {
-    Navbar,
-    Popular
+    Navbar
   },
   data:function(){
     return{
@@ -34,7 +32,7 @@ export default {
 
 #app h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat;
-  color: #121212;
+  color: #272643;
 }
 #app p,a{
   font-family: Raleway;

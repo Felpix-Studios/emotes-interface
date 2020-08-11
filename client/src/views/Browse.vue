@@ -1,5 +1,5 @@
 <template>
-    <div class="popular">
+    <div class="browse">
         <h2>Browse Emotes</h2>
         <p>Find emotes you're interested in</p>
         <input type="text" placeholder="Oof, JS, Thonk..." v-model="searchField">
@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import EmoteBox from './EmoteBox'
+import EmoteBox from '../components/EmoteBox'
 
 export default {
-    name: 'Popular',
+    name: 'Browse',
     components:{EmoteBox},
     data: function() {
         return {
@@ -48,7 +48,7 @@ export default {
 </script>
 
 <style lang="scss">
-.popular{
+.browse{
     margin: 0 auto;
     svg{
             vertical-align: middle;
