@@ -1,7 +1,7 @@
 <template>
     <div class="EmoteBox">
-        <h3 v-on:click=copy data-tooltip="Emote Copied to Clipboard" :class="{tooltip:tooltip == true}">{{ emote.name }}</h3>
-        <p :id="emote.slug">Emote Path: /{{emote.slug }}</p>
+        <h3 v-on:click=copy data-tooltip="Emote Copied to Clipboard" :class="{tooltip:tooltip == true}"><a href="#x">{{ emote.name }}</a></h3>
+        <p :id="emote.slug">Emote Path: {{emote.slug }}</p>
         <img alt="Emote Pic" :src="'https://emotes.ml/'+emote.slug"/>
     </div>
 </template>
@@ -39,7 +39,15 @@ export default {
         position:relative;
         color:#363636;
         margin: 0;
-        
+        a{
+            position:relative;
+        color:#363636;
+        margin: 0;
+        }
+        & a:hover{
+            color: #121212;
+            text-decoration: underline;
+        }
     }
     a{
             svg{
@@ -68,7 +76,7 @@ export default {
             width: max-content;
             max-width: 200px;
             opacity: 0;
-            pointer-events: none;
+            pointer-events: stroke;
             left: 50%;
             top: 0;
             border-radius: 4px;

@@ -33,7 +33,7 @@ export default {
     },
     mounted(){
         this.$axios
-            .get('Insert key')
+            .get('')
             .then(response=>(this.popularEmotes=response["data"]))
         console.log(this.popularEmotes)
     },
@@ -49,6 +49,7 @@ export default {
 
 <style lang="scss">
 .popular{
+    margin: 0 auto;
     svg{
             vertical-align: middle;
             font-size: 2rem;
@@ -62,9 +63,10 @@ export default {
 }
 .emoteGrid{
     display: grid;
-    width: 960px;
+    max-width: 960px;
     height: auto;
-    gap:2rem;
+    margin: 0 auto;
+    gap:1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 h2{
@@ -107,4 +109,10 @@ button{
         border-radius: 0.5rem;
     }
 }
+@media only screen and (max-width: 768px) {
+    .emoteGrid{
+        gap:2rem;
+        grid-template-columns: 1fr;
+    }
+} 
 </style>

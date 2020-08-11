@@ -27,7 +27,7 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   height: auto;
 }
@@ -49,5 +49,10 @@ i{
 .dark{
   background: #121212;
   color: white;
+}
+@media only screen and (max-width: 768px) {
+  #app{
+    padding: 0 1.5rem;
+  }
 }
 </style>

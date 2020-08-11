@@ -39,4 +39,20 @@ export default {
         }
     }
 }
+@media only screen and (max-width: 768px) {
+    .nav{
+    h1{
+        font-size: 1.5rem;
+    }
+    .navLinks{
+        a{
+            &:hover{
+            }
+        }
+        a:first-child{
+            margin-right: 1rem;
+        }
+    }
+}
+}
 </style>
