@@ -6,7 +6,7 @@ import EmotePage from '../views/EmotePage.vue'
 const routes = [
     { path: '/', name:"Browse",component: Browse },
     { path: '/create', name:"Create",component: Create },
-    { path: '/emotes/:id',component: EmotePage },
+    { path: '/emotes/:id',component: EmotePage,name:"emotePage" },
 ]
 
 const router = new VueRouter({

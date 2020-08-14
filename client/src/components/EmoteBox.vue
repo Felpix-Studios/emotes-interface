@@ -1,6 +1,6 @@
 <template>
     <div class="EmoteBox">
-        <h3 v-on:click=copy data-tooltip="Emote Copied to Clipboard" :class="{tooltip:tooltip == true}"><a href="#x">{{ emote.name }}</a></h3>
+        <router-link v-bind:emote="emote" :to="{path:'emotes/'+emote.slug}"><h3 v-on:click=copy data-tooltip="Emote Copied to Clipboard" :class="{tooltip:tooltip == true}"><a href="#x">{{ emote.name }}</a></h3></router-link>
         <p :id="emote.slug">Emote Path: {{emote.slug }}</p>
         <img alt="Emote Pic" :src="'https://emotes.ml/'+emote.slug"/>
     </div>
@@ -12,7 +12,6 @@ export default {
     props:["emote"],
     data: function() {
         return {
-            Emote: null,
             tooltip:false
         };
     },

@@ -1,20 +1,20 @@
 <template>
     <div class="EmotePage">
-        <h2>Create Emotes</h2>
-        <p>Upload here!</p>
+        <h2>Emote Page</h2>
+        <p>{{$route.params.id}}</p>
     </div>
 </template>
 
 <script>
 export default {
     name: 'EmotePage',
-    props:["emote"],
     data: function() {
         return {
+            emote:null
         };
     },
     mounted(){
-    
+        
     }
 }
 </script>
