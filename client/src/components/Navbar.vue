@@ -1,6 +1,6 @@
 <template>
     <div class="nav">
-        <h1>emotes.ml</h1>
+        <router-link to="/"><h1>emotes.ml</h1></router-link>
         <div class="navLinks">
             <router-link to="/"><a href="#">Browse</a></router-link>
             <router-link to="/create"><a href="#">Create</a></router-link>

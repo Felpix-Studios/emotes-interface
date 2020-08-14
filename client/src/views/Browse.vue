@@ -33,7 +33,7 @@ export default {
     },
     mounted(){
         this.$axios
-            .get('')
+            .get('https://emotes.ml/api/emotes?api_key=bQ_3ukoR1MaK1gxQT6OPQqgOgmxx4_mckSkWtlU_T2QLlFcHsEI04jN3sS2BKyhS1-lSdzi6_GRa-bn9SAbe_GJhY32Qsvt6RBE3Ug-yOYO-qsi2ICprDFFVc8XXflZ5G8ixH59kWmrTzFH3eNyq3MTSdOP-bZ333PrvSbNxQVk')
             .then(response=>(this.popularEmotes=response["data"]))
         console.log(this.popularEmotes)
     },
@@ -97,9 +97,8 @@ button{
     border: none;
     border-radius: 0.5rem;
     color: white;
-    background-color: #88BED9;
+    background-color: #2c698d;
     font-family: Raleway;
-    margin-left:1rem;
     &:hover{
         border: none;
         border-radius: 0.5rem;
