@@ -97,7 +97,7 @@ button{
     border: none;
     border-radius: 0.5rem;
     color: white;
-    background-color: #2c698d;
+    background-color: #272643;
     font-family: Raleway;
     &:hover{
         border: none;

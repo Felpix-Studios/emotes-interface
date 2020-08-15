@@ -1,7 +1,7 @@
 <template>
     <div class="EmotePage">
         <h2>Emote Page</h2>
-        <p>{{$route.params.id}}</p>
+        <p>{{ emoteSlug }}</p>
     </div>
 </template>
 
@@ -10,11 +10,10 @@ export default {
     name: 'EmotePage',
     data: function() {
         return {
-            emote:null
+            emoteSlug:this.$route.params.id
         };
     },
     mounted(){
-        
     }
 }
 </script>

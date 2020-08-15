@@ -14,7 +14,7 @@ export default {
   },
   data:function(){
     return{
-      darkMode:true
+      darkMode:false
     }
   }
 }
